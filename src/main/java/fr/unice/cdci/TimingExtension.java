@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 /**
  * @author https://junit.org/junit5/docs/current/user-guide/#extensions-lifecycle-callbacks-timing-extension
- *
+ * @author Gagnaire - Save - Tabbaa - Laclavere
  */
 public class TimingExtension implements BeforeTestExecutionCallback, AfterTestExecutionCallback {
 

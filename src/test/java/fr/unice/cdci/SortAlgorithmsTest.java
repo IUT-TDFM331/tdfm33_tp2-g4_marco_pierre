@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 /**
- * @author Mireille Blay-Fornarino
+ * @author Gagnaire - Save - Tabbaa - Laclavere
  * Inspired by https://junit.org/junit5/docs/current/user-guide/
  * 21 sept. 2019
  */
