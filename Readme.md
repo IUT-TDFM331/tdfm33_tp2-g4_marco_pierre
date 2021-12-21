@@ -15,6 +15,11 @@ Le test ne s'execute pas car la méthode a été ajouté en dehors de la classe 
 
 Nous remarquons que les autres membres du groupe n'arrivent pas eux non plus d'executer le test
 
+3.A.Mise en place de l'integration continus.6
+Que Remaquez-vous?
+
+Nous pouvons remarquer que lorsque l'on effectue un push, on recoit sur le github dans la section "Actions" une notification pour montrer que ca a ete executer correctement.
+
 3.A.Mise en place de l'integration continus.9
 Que Remaquez-vous?
 
