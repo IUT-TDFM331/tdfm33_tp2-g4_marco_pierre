@@ -21,20 +21,27 @@ jobs: # list des jobs à effectuer
     - name: Build the tests #
       run: mvn test
 
-    - name: Ajouter un job qui envoi un email
+
+
+  - name: Ajouter un job qui envoi un email
+      if: always()
       uses: dawidd6/action-send-mail@v3
-      server_address: smtp.gmail.com
-      server_port: 465
       with:
+        server_address: smtp.gmail.com
+        server_port: 465
         username: iuts3.class
         password: kvkekkddxgmibljv
-        subject: Résulat obtenue
-        to : siham.tabbaa.info@gmail.com, marco.laclavere@gmail.com, pierre123412@gmail.com
-        from : GitHub
+        subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+        body: ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+        to: siham.tabbaa.info@gmail.com, marco.laclavere@gmail.com, pierre123412@gmail.com
+        from: GitHub
+  - name: Ajouter un job qui envoi un message sur slack
+      if: always()
+      id: slack
+      uses: slackapi/slack-github-action@v1.16.0
+      webhook: https://hooks.slack.com/services/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
+      env:
+        SLACK_WEBHOOK_URL: https://hooks.slack.com/services/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
 
-    - name: Ajouter un job qui envoi un message sur slack
-        id: slack
-        uses: slackapi/slack-github-action@v1.16.0
-        webhook: https://hooks.slack.com/services/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
 
 
