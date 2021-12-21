@@ -15,12 +15,14 @@ Le test ne s'execute pas car la méthode a été ajouté en dehors de la classe 
 
 Nous remarquons que les autres membres du groupe n'arrivent pas eux non plus d'executer le test
 
-
 3.A.Mise en place de l'integration continus.9
 Que Remaquez-vous?
 
-Nou pouvons remarquer que la valeur que l'on recupere est false alors que nous attendions la valeur true 
+Nous pouvons remarquer que la valeur que l'on recupere est false alors que nous attendions la valeur true 
 
+
+13. Allez sur votre repo Github
+    Nous remarquons que nos test ont faild.
 
 
 
