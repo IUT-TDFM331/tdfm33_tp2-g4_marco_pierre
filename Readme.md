@@ -14,3 +14,5 @@ Le test ne s'execute pas car la méthode a été ajouté en dehors de la classe 
 3 et 4-Que remarquez-vous ? (après pull des autres membres du groupe de la classe "SortAlgorithms" contenant l'erreur)
 
 Nous remarquons que les autres membres du groupe n'arrivent pas eux non plus d'executer le test
+
+
