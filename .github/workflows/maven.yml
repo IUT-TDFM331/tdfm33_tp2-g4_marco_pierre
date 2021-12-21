@@ -18,13 +18,13 @@ jobs: # list des jobs à effectuer
         cache: maven
     - name: Compiler le projet # On donne un nom au job
       run: mvn -B -DskipTests clean package # On lance la commande maven qui lance le build du code
+
     - name: Build the tests #
       run: mvn test
 
 
 
   - name: Ajouter un job qui envoi un email
-      if: always()
       uses: dawidd6/action-send-mail@v3
       with:
         server_address: smtp.gmail.com
@@ -35,6 +35,7 @@ jobs: # list des jobs à effectuer
         body: ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
         to: siham.tabbaa.info@gmail.com, marco.laclavere@gmail.com, pierre123412@gmail.com
         from: GitHub
+
   - name: Ajouter un job qui envoi un message sur slack
       if: always()
       id: slack
