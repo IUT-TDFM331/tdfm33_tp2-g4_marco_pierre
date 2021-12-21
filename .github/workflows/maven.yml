@@ -32,5 +32,9 @@ jobs: # list des jobs à effectuer
         to : siham.tabbaa.info@gmail.com, marco.laclavere@gmail.com, pierre123412@gmail.com
         from : GitHub
 
+    - name: Ajouter un job qui envoi un message sur slack
+        id: slack
+        uses: slackapi/slack-github-action@v1.16.0
+        webhook: https://hooks.slack.com/services/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
 
 
