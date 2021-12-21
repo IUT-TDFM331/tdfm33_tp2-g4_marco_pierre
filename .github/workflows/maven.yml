@@ -20,3 +20,17 @@ jobs: # list des jobs à effectuer
       run: mvn -B -DskipTests clean package # On lance la commande maven qui lance le build du code
     - name: Build the tests #
       run: mvn test
+
+    - name: Ajouter un job qui envoi un email
+      uses: dawidd6/action-send-mail@v3
+      server_address: smtp.gmail.com
+      server_port: 465
+      with:
+        username: iuts3.class
+        password: kvkekkddxgmibljv
+        subject: Résulat obtenue
+        to : siham.tabbaa.info@gmail.com, marco.laclavere@gmail.com, pierre123412@gmail.com
+        from : GitHub
+
+
+
